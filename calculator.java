@@ -1,3 +1,4 @@
+/* This program is a simple demo for calculator program*/
 import java.util.Scanner;
 
 public class JavaExample {
@@ -7,11 +8,6 @@ public class JavaExample {
     	double num1, num2;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number:");
-
-        /* We are using data type double so that user
-         * can enter integer as well as floating point
-         * value
-         */
         num1 = scanner.nextDouble();
         System.out.print("Enter second number:");
         num2 = scanner.nextDouble();
@@ -38,12 +34,8 @@ public class JavaExample {
 
             case '/':
             	output = num1 / num2;
-                break;
+                break; 
 
-            /* If user enters any other operator or char apart from
-             * +, -, * and /, then display an error message to user
-             * 
-             */
             default:
                 System.out.printf("You have entered wrong operator");
                 return;
